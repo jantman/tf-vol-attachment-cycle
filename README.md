@@ -10,8 +10,7 @@ resource that references it.
 
 1. Clone this repo.
 2. Export AWS credentials
-3. ``AWS_REGION=region_name ./run.sh``
-4. ``terraform destroy``
+3. ``AWS_REGION=region_name SUBNET_ID=subnet-XXXX ./run.sh``
 
 ## Output
 
