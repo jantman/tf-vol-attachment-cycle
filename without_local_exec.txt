@@ -40,8 +40,8 @@ Terraform will perform the following actions:
       size:                                      "1"
       snapshot_id:                               <computed>
       tags.%:                                    "2"
-      tags.Name:                                 "tf-issue-TBD"
-      tags.terraform_issue:                      "TBD"
+      tags.Name:                                 "tf-issue-16237"
+      tags.terraform_issue:                      "16237"
       type:                                      "standard"
 
   + aws_instance.ecs-instance
@@ -73,8 +73,8 @@ Terraform will perform the following actions:
       source_dest_check:                         "true"
       subnet_id:                                 "subnet-01769a76"
       tags.%:                                    "2"
-      tags.Name:                                 "tf-issue-TBD"
-      tags.terraform_issue:                      "TBD"
+      tags.Name:                                 "tf-issue-16237"
+      tags.terraform_issue:                      "16237"
       tenancy:                                   <computed>
       user_data:                                 "7fe58ba0db3618ec1466f8858d9e404413ebd704"
       volume_tags.%:                             <computed>
@@ -107,8 +107,8 @@ aws_ebs_volume.ecs-instance-persistent-vol: Creating...
   size:                 "" => "1"
   snapshot_id:          "" => "<computed>"
   tags.%:               "" => "2"
-  tags.Name:            "" => "tf-issue-TBD"
-  tags.terraform_issue: "" => "TBD"
+  tags.Name:            "" => "tf-issue-16237"
+  tags.terraform_issue: "" => "16237"
   type:                 "" => "standard"
 aws_instance.ecs-instance: Creating...
   ami:                                       "" => "ami-1d668865"
@@ -138,8 +138,8 @@ aws_instance.ecs-instance: Creating...
   source_dest_check:                         "" => "true"
   subnet_id:                                 "" => "subnet-01769a76"
   tags.%:                                    "" => "2"
-  tags.Name:                                 "" => "tf-issue-TBD"
-  tags.terraform_issue:                      "" => "TBD"
+  tags.Name:                                 "" => "tf-issue-16237"
+  tags.terraform_issue:                      "" => "16237"
   tenancy:                                   "" => "<computed>"
   user_data:                                 "" => "7fe58ba0db3618ec1466f8858d9e404413ebd704"
   volume_tags.%:                             "" => "<computed>"
@@ -215,8 +215,8 @@ Terraform will perform the following actions:
       source_dest_check:                         "true" => "true"
       subnet_id:                                 "subnet-01769a76" => "subnet-01769a76"
       tags.%:                                    "2" => "2"
-      tags.Name:                                 "tf-issue-TBD" => "tf-issue-TBD"
-      tags.terraform_issue:                      "TBD" => "TBD"
+      tags.Name:                                 "tf-issue-16237" => "tf-issue-16237"
+      tags.terraform_issue:                      "16237" => "16237"
       tenancy:                                   "default" => <computed>
       user_data:                                 "7fe58ba0db3618ec1466f8858d9e404413ebd704" => "71fd309352d77b36739d30963a43883cb51553ea" (forces new resource)
       volume_tags.%:                             "2" => <computed>
@@ -285,8 +285,8 @@ aws_instance.ecs-instance: Creating...
   source_dest_check:                         "" => "true"
   subnet_id:                                 "" => "subnet-01769a76"
   tags.%:                                    "" => "2"
-  tags.Name:                                 "" => "tf-issue-TBD"
-  tags.terraform_issue:                      "" => "TBD"
+  tags.Name:                                 "" => "tf-issue-16237"
+  tags.terraform_issue:                      "" => "16237"
   tenancy:                                   "" => "<computed>"
   user_data:                                 "" => "71fd309352d77b36739d30963a43883cb51553ea"
   volume_tags.%:                             "" => "<computed>"

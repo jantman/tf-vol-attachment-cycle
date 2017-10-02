@@ -1,6 +1,6 @@
 # tf-vol-attachment-cycle
 
-Proof-of-concept for Terraform (0.10.6) [issue TBD](https://github.com/hashicorp/terraform/issues/TBD).
+Proof-of-concept for Terraform (0.10.6) [issue 16237](https://github.com/hashicorp/terraform/issues/16237).
 
 cycle detected when an ``aws_instance`` resource with a ``when = "destroy"`` provisioner
 needs to be replaced (i.e. from user-data change) and there is a ``aws_volume_attachment``

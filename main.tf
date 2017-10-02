@@ -26,7 +26,7 @@ locals {
   subnet_id        = "${var.subnet_id}"
   az               = "${data.aws_subnet.snet.availability_zone}"
   common_tags      = {
-    terraform_issue = "TBD"
+    terraform_issue = "16237"
   }
 }
 
@@ -51,7 +51,7 @@ resource "aws_instance" "ecs-instance" {
   tags = "${merge(
     local.common_tags,
     map(
-      "Name", "tf-issue-TBD"
+      "Name", "tf-issue-16237"
     )
   )}"
 
@@ -111,7 +111,7 @@ resource "aws_ebs_volume" "ecs-instance-persistent-vol" {
   tags = "${merge(
     local.common_tags,
     map(
-      "Name", "tf-issue-TBD"
+      "Name", "tf-issue-16237"
     )
   )}"
 }
