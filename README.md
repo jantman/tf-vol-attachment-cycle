@@ -3,8 +3,8 @@
 Proof-of-concept for Terraform (0.10.6) [issue 16237](https://github.com/hashicorp/terraform/issues/16237).
 
 cycle detected when an ``aws_instance`` resource with a ``when = "destroy"`` provisioner
-needs to be replaced (i.e. from user-data change) and there is a ``aws_volume_attachment``
-resource that references it.
+needs to be replaced (i.e. from user-data change) and the provisioner command includes
+resource attribute interpolations.
 
 ## Running Example Code
 
@@ -22,7 +22,7 @@ If we remove the:
 ```
 provisioner "local-exec" {
   when    = "destroy"
-  command = "${path.module}/instance-destroy.sh '${aws_instance.ecs-instance.public_ip}' '${var.persistent_ebs_mountpoint}'"
+  command = "${path.module}/instance-destroy.sh '${aws_instance.ecs-instance.public_ip}'"
 }
 ```
 
