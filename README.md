@@ -27,3 +27,6 @@ provisioner "local-exec" {
 ```
 
 block from the ``aws_instance`` resource and re-run, it works fine: [without_local_exec.txt](without_local_exec.txt).
+
+Similarly, if we just remove the ``'${aws_instance.ecs-instance.public_ip}'`` attribute interpolation from the
+provisioner command, it also works fine: [without_interpolation.txt](without_interpolation.txt).
